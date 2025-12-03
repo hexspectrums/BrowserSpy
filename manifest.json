@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Mojo ADBlocker",
+  "version": "1.0",
+  "description": "Block Unwanted Ads",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "desktopCapture",
+    "storage",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "script.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  }
+}
