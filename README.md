@@ -102,10 +102,6 @@ Each screenshot includes:
 - 📊 Scroll position
 - 🔍 Element information
 
-# Support & Donations
-
-# Support & Donations
-
 ### 💰 Support Development
 BrowserSpy is developed with ❤️. If you find it useful, consider supporting:
 
